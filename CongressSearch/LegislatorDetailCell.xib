@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LegislatorDetailCell" selectionStyle="default" indentationWidth="10" rowHeight="40" id="hTr-Gc-O03" customClass="LegislatorDetailCell" customModule="SlideMenuControllerSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hTr-Gc-O03" id="vER-lN-PX4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWI-9e-pS9">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="162" id="PhL-KD-yof"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gOX-Ww-psz">
+                        <rect key="frame" x="161" y="0.0" width="159" height="39"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="159" id="nrr-Zi-Y9Y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="hTr-Gc-O03" id="Dse-wC-UQf"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gOX-Ww-psz" firstAttribute="top" secondItem="RWI-9e-pS9" secondAttribute="top" id="4px-Rm-efz"/>
+                    <constraint firstItem="gOX-Ww-psz" firstAttribute="bottom" secondItem="RWI-9e-pS9" secondAttribute="bottom" id="53u-0b-Pmu"/>
+                    <constraint firstItem="RWI-9e-pS9" firstAttribute="leading" secondItem="vER-lN-PX4" secondAttribute="leading" id="5yf-4G-gBI"/>
+                    <constraint firstAttribute="trailing" secondItem="gOX-Ww-psz" secondAttribute="trailing" id="Ni2-ZB-eph"/>
+                    <constraint firstItem="RWI-9e-pS9" firstAttribute="top" secondItem="vER-lN-PX4" secondAttribute="top" id="UGn-4N-2q9"/>
+                    <constraint firstAttribute="bottom" secondItem="RWI-9e-pS9" secondAttribute="bottom" id="cf1-OE-8ar"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="dataContent" destination="gOX-Ww-psz" id="hta-I3-JWD"/>
+                <outlet property="dataTitle" destination="RWI-9e-pS9" id="xrg-zA-bSY"/>
+            </connections>
+            <point key="canvasLocation" x="-645" y="188"/>
+        </tableViewCell>
+    </objects>
+</document>

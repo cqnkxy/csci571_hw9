@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C779AC94AAF26299AC2D478A5DDF7C5A40736560",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C779AC94AAF26299AC2D478A5DDF7C5A40736560" : 9223372036854775807,
+    "15E0B78C86679F391BF91489604689C659E06B28" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "46F130AA-DC9C-4B8A-AC7F-6A40251E161F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C779AC94AAF26299AC2D478A5DDF7C5A40736560" : "SlideMenuControllerSwift\/",
+    "15E0B78C86679F391BF91489604689C659E06B28" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SlideMenuControllerSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SlideMenuControllerSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cqnkxy\/csci571.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "15E0B78C86679F391BF91489604689C659E06B28"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dekatotoro\/SlideMenuControllerSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C779AC94AAF26299AC2D478A5DDF7C5A40736560"
+    }
+  ]
+}

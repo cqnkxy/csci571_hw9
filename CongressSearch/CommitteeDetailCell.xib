@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CommitteeDetailCell" selectionStyle="default" indentationWidth="10" rowHeight="40" id="HBZ-oS-rhx" customClass="CommitteeDetailCell" customModule="SlideMenuControllerSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HBZ-oS-rhx" id="1p0-sr-5nE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwU-eP-hCn">
+                        <rect key="frame" x="0.0" y="0.0" width="162" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="162" id="cQe-tm-2iv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bvh-F8-Svn">
+                        <rect key="frame" x="161" y="0.0" width="159" height="39"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="159" id="XPV-Aa-DI3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="HBZ-oS-rhx" id="0hg-5v-QR9"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bvh-F8-Svn" firstAttribute="bottom" secondItem="FwU-eP-hCn" secondAttribute="bottom" id="4ar-68-23l"/>
+                    <constraint firstAttribute="bottom" secondItem="FwU-eP-hCn" secondAttribute="bottom" id="L5R-IF-wuU"/>
+                    <constraint firstItem="FwU-eP-hCn" firstAttribute="top" secondItem="1p0-sr-5nE" secondAttribute="top" id="UU6-cl-kMV"/>
+                    <constraint firstItem="FwU-eP-hCn" firstAttribute="leading" secondItem="1p0-sr-5nE" secondAttribute="leading" id="csu-0n-M5s"/>
+                    <constraint firstItem="bvh-F8-Svn" firstAttribute="top" secondItem="FwU-eP-hCn" secondAttribute="top" id="day-eZ-oBC"/>
+                    <constraint firstAttribute="trailing" secondItem="bvh-F8-Svn" secondAttribute="trailing" id="gB3-RD-Igw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="dataContent" destination="bvh-F8-Svn" id="HIH-xj-mUf"/>
+                <outlet property="dataTitle" destination="FwU-eP-hCn" id="3Za-HB-eYm"/>
+            </connections>
+            <point key="canvasLocation" x="-645" y="188"/>
+        </tableViewCell>
+    </objects>
+</document>

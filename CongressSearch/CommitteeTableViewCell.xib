@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CommitteeTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="40" id="Zq3-M6-nJ5" customClass="CommitteeTableViewCell" customModule="SlideMenuControllerSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zq3-M6-nJ5" id="WFm-7b-l31">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIL-Rz-zi7">
+                        <rect key="frame" x="8" y="22" width="304" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybh-Wt-Rwm">
+                        <rect key="frame" x="8" y="0.0" width="304" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="dmH-Ca-Pmd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eIL-Rz-zi7" firstAttribute="trailing" secondItem="Ybh-Wt-Rwm" secondAttribute="trailing" id="3Zy-xZ-anC"/>
+                    <constraint firstAttribute="bottom" secondItem="eIL-Rz-zi7" secondAttribute="bottom" id="5aZ-KW-fRJ"/>
+                    <constraint firstItem="eIL-Rz-zi7" firstAttribute="top" secondItem="Ybh-Wt-Rwm" secondAttribute="bottom" id="Lqi-1U-krq"/>
+                    <constraint firstItem="Ybh-Wt-Rwm" firstAttribute="leading" secondItem="WFm-7b-l31" secondAttribute="leadingMargin" id="are-g3-WMg"/>
+                    <constraint firstItem="eIL-Rz-zi7" firstAttribute="leading" secondItem="Ybh-Wt-Rwm" secondAttribute="leading" id="oAX-Rt-Pkn"/>
+                    <constraint firstItem="Ybh-Wt-Rwm" firstAttribute="trailing" secondItem="WFm-7b-l31" secondAttribute="trailingMargin" id="xMo-D9-0jc"/>
+                    <constraint firstItem="Ybh-Wt-Rwm" firstAttribute="top" secondItem="WFm-7b-l31" secondAttribute="top" id="xtc-1d-G4p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="id" destination="eIL-Rz-zi7" id="Vy2-KL-e6Y"/>
+                <outlet property="name" destination="Ybh-Wt-Rwm" id="znw-MO-Q7F"/>
+            </connections>
+            <point key="canvasLocation" x="-645" y="228"/>
+        </tableViewCell>
+    </objects>
+</document>
