@@ -6,14 +6,6 @@
 //  
 //
 
-//
-//  BillNewViewController.swift
-//  SlideMenuControllerSwift
-//
-//  Created by YuanX on 11/23/16.
-//  
-//
-
 import UIKit
 import Alamofire
 import SwiftyJSON
